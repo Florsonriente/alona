@@ -6,7 +6,7 @@
     <title>Weather, travel & mood</title>
 
    
-    <link rel="stylesheet" href="css/stylenewwebsite_weather_app.css">
+    <link rel="stylesheet" href="css/styleindex_weather_app.css">
     <link rel="stylesheet" href="css/style_general.css">
 
     
@@ -26,18 +26,18 @@
         justify-content: space-evenly;
         height: 100vh;
         gap: 3em;">
-<li  > <a href="../webproject/newwebsite.html"> Start </a> </li>
-<li> <a href="../webproject/portfolio.html"> Portfolio </a> </li>
-<li > <a href="../webproject/about.html"> Me & IT  </a> </li>
-<li > <a href="../webproject/newwebsite_quiz.html"> Code for fun  </a> </li>
+<li  > <a href="./newwebsite.html"> Start </a> </li>
+<li> <a href="./portfolio.html"> Portfolio </a> </li>
+<li > <a href="./about.html"> Me & IT  </a> </li>
+<li > <a href="./newwebsite_quiz.html"> Code for fun  </a> </li>
 <li > <a href="mailto:alonakalko89@gmail.com">Contact</a> </li>
         </div>
         <div style="display:none;"class ="right">
-<img src="../webproject/pics/oldmanlaufeyson_clouds_of_data_fine_art_photography_fashion_mag_d06afed8-0d04-4b12-af34-40ca5b291693.png" alt="" style="width:300px"style="display:none!important">
-<img src="../webproject/pics/amyura_abstract_holographic_of_gradient_yellow_pastel_color_8d53e07c-f4c3-4b27-b710-3eb7bc74b443.png" alt="" style="width:300px">
-<img src="../webproject/pics/bluebutton_yi_soft_holographic_gradient_illustration_minimalist.png" alt="" style="width:300px">
-<img src="../webproject/pics/beyondtomorrowstudios_76190_A_black_rectangular_box_above_a_doo_ef9757af-2723-4be1-932d-9e5eccf38c06.png" alt="" style="width:300px">
-<img src="../webproject/pics/georgieoboy_Realistic_3d_holographic_liquid_texture_-_iridescen_f14bfd2d-e796-4e50-abf1-6e8b414accf3.png" alt="" style="width:300px">
+<img src="./pics/oldmanlaufeyson_clouds_of_data_fine_art_photography_fashion_mag_d06afed8-0d04-4b12-af34-40ca5b291693.png" alt="" style="width:300px"style="display:none!important">
+<img src="./pics/amyura_abstract_holographic_of_gradient_yellow_pastel_color_8d53e07c-f4c3-4b27-b710-3eb7bc74b443.png" alt="" style="width:300px">
+<img src="./pics/bluebutton_yi_soft_holographic_gradient_illustration_minimalist.png" alt="" style="width:300px">
+<img src="./pics/beyondtomorrowstudios_76190_A_black_rectangular_box_above_a_doo_ef9757af-2723-4be1-932d-9e5eccf38c06.png" alt="" style="width:300px">
+<img src="./pics/georgieoboy_Realistic_3d_holographic_liquid_texture_-_iridescen_f14bfd2d-e796-4e50-abf1-6e8b414accf3.png" alt="" style="width:300px">
         </div>
         </ul>
 
@@ -59,21 +59,21 @@
   <div class="card">
     <div class="search">
         <input type="text" placeholder="enter city name" spellcheck="false">
-        <button><img src="../webproject/images_weather_app/search.png"></button>
+        <button><img src="./images_weather_app/search.png"></button>
     </div>
     <div class="weather">
-        <img src="../webproject/images_weather_app/rain.png" class="weather-icon">
+        <img src="./images_weather_app/rain.png" class="weather-icon">
    <h1 class="temp">22°c</h1>
    <h2 class="city">New York</h2>
    <div class="details">
     <div class="col">
-        <img src="../webproject/images_weather_app/humidity.png">
+        <img src="./images_weather_app/humidity.png">
         <div>
             <p class="humidity">50%</p>
             <p>Humidity</p>
         </div></div>
         <div class="col">
-            <img src="../webproject/images_weather_app/wind.png">
+            <img src="./images_weather_app/wind.png">
             <div>
                 <p class="wind">15km/h</p>
                 <p>Wind speed</p>
@@ -93,13 +93,13 @@
 <div class="buttons">
 
 
-    <button> <a href="../webproject/newwebsite_quiz.html"> Back  </a></button>
-    <button> <a href="../webproject/newwebsite_drag&drop.html"> Next  </a></button>
+    <button> <a href="./newwebsite_quiz.html"> Back  </a></button>
+    <button> <a href="./newwebsite_drag&drop.html"> Next  </a></button>
     
     
      </div>    
 </main>
-<script src="../webproject/js/newwebsite_weather.script.js"></script>
+<script src="./js/newwebsite_weather.script.js"></script>
 <script>
 
 const apiKey = "5c2764e96adc355cc3169b7a5a7eacdf";
@@ -175,78 +175,78 @@ else {
     
 
     if(data.weather[0].main == "Clouds"|| data.weather[0].main == "Mist") {
-        weatherIcon.src = "../webproject/images_weather_app/clouds.png"
+        weatherIcon.src = "./images_weather_app/clouds.png"
         document.body.style.backgroundRepeat = "no-repeat";
         document.body.style.backgroundSize = "cover";
-        document.querySelector("main").style.backgroundImage ='url("../webproject/images_weather_app/clouds3.gif")';
-        //document.querySelector("body > main").style.backgroundImage ='url("../webproject/images_weather_app/clouds3.gif")';
+        document.querySelector("main").style.backgroundImage ='url("./images_weather_app/clouds3.gif")';
+        //document.querySelector("body > main").style.backgroundImage ='url("./images_weather_app/clouds3.gif")';
 
                     if (temp >= 15) {
-                    document.body.style.backgroundImage = 'url("../webproject/images_weather_app/bckgr_sun.png")' } 
+                    document.body.style.backgroundImage = 'url("./images_weather_app/bckgr_sun.png")' } 
                     else if (temp >= 4 && temp <= 14){
-                        document.body.style.backgroundImage = 'url("../webproject/images_weather_app/backgr_clouds.png")' } 
+                        document.body.style.backgroundImage = 'url("./images_weather_app/backgr_clouds.png")' } 
                     else  {
-                        document.body.style.backgroundImage = 'url("../webproject/images_weather_app/bckr_snow.png")' }   
+                        document.body.style.backgroundImage = 'url("./images_weather_app/bckr_snow.png")' }   
                     }
                     
     
     else if (data.weather[0].main == "Clear") {
-        weatherIcon.src = "../webproject/images_weather_app/clear.png"
+        weatherIcon.src = "./images_weather_app/clear.png"
         document.body.style.backgroundRepeat = "no-repeat";
         document.body.style.backgroundSize = "cover";
-        document.querySelector("main").style.backgroundImage ='url("../webproject/images_weather_app/sun.gif")';
+        document.querySelector("main").style.backgroundImage ='url("./images_weather_app/sun.gif")';
 
                     if (temp >= 15) {
-                    document.body.style.backgroundImage = 'url("../webproject/images_weather_app/bckgr_sun.png")' } 
+                    document.body.style.backgroundImage = 'url("./images_weather_app/bckgr_sun.png")' } 
                     else if (temp >= 4 && temp <= 14){
-                        document.body.style.backgroundImage = 'url("../webproject/images_weather_app/bckgr_sun.png")' } 
+                        document.body.style.backgroundImage = 'url("./images_weather_app/bckgr_sun.png")' } 
                     else  {
-                        document.body.style.backgroundImage = 'url("../webproject/images_weather_app/bckr_snow.png")' }   
+                        document.body.style.backgroundImage = 'url("./images_weather_app/bckr_snow.png")' }   
                     }
 
 
     else if (data.weather[0].main == "Rain" || data.weather[0].main == "Drizzle"){
-        weatherIcon.src = "../webproject/images_weather_app/rain.png"
+        weatherIcon.src = "./images_weather_app/rain.png"
        
         document.body.style.backgroundRepeat = "no-repeat";
         document.body.style.backgroundSize = "cover";
-        document.querySelector("main").style.backgroundImage ='url("../webproject/images_weather_app/rain3.gif")';
+        document.querySelector("main").style.backgroundImage ='url("./images_weather_app/rain3.gif")';
 
                     if (temp >= 15) {
-                    document.body.style.backgroundImage = 'url("../webproject/images_weather_app/bckgr_sun.png")' } 
+                    document.body.style.backgroundImage = 'url("./images_weather_app/bckgr_sun.png")' } 
                     else if (temp >= 4 && temp <= 14){
-                        document.body.style.backgroundImage = 'url("../webproject/images_weather_app/bckgr_rain.png")' }
+                        document.body.style.backgroundImage = 'url("./images_weather_app/bckgr_rain.png")' }
                     else  {
-                        document.body.style.backgroundImage = 'url("../webproject/images_weather_app/bckr_snow.png")' }   
+                        document.body.style.backgroundImage = 'url("./images_weather_app/bckr_snow.png")' }   
                     }
 
    /* else if (data.weather[0].main == "Drizzle"){
-        weatherIcon.src = "../webproject/images_weather_app/drizzle.png"
-        document.body.style.backgroundImage = 'url("../webproject/images_weather_app/bckgr_rain.png")' 
+        weatherIcon.src = "./images_weather_app/drizzle.png"
+        document.body.style.backgroundImage = 'url("./images_weather_app/bckgr_rain.png")' 
         document.body.style.backgroundRepeat = "no-repeat";
         document.body.style.backgroundSize = "cover";
-        document.querySelector(".maincontainer").style.backgroundImage ='url("../webproject/images_weather_app/rain3.gif")';
+        document.querySelector(".maincontainer").style.backgroundImage ='url("./images_weather_app/rain3.gif")';
     }
     else if (data.weather[0].main == "Mist"){
-        weatherIcon.src = "../webproject/images_weather_app/mist.png"
-        document.body.style.backgroundImage = 'url("../webproject/images_weather_app/backgr_clouds.png")' 
+        weatherIcon.src = "./images_weather_app/mist.png"
+        document.body.style.backgroundImage = 'url("./images_weather_app/backgr_clouds.png")' 
         document.body.style.backgroundRepeat = "no-repeat";
         document.body.style.backgroundSize = "cover";
-        document.querySelector(".maincontainer").style.backgroundImage ='url("../webproject/images_weather_app/clouds3.gif")';
+        document.querySelector(".maincontainer").style.backgroundImage ='url("./images_weather_app/clouds3.gif")';
     }*/
     else if (data.weather[0].main == "Snow"){
-        weatherIcon.src = "../webproject/images_weather_app/snow.png"
+        weatherIcon.src = "./images_weather_app/snow.png"
         document.body.style.backgroundRepeat = "no-repeat";
         document.body.style.backgroundSize = "cover";
-      document.querySelector("main").style.backgroundImage ='url("../webproject/images_weather_app/snow_bckgr.gif")';
-          //document.querySelector("main").style.backgroundImage ='url("../webproject/images_weather_app/sun.gif")';
+      document.querySelector("main").style.backgroundImage ='url("./images_weather_app/snow_bckgr.gif")';
+          //document.querySelector("main").style.backgroundImage ='url("./images_weather_app/sun.gif")';
 
                     if (temp >= 15) {
-                    document.body.style.backgroundImage = 'url("../webproject/images_weather_app/bckgr_sun.png")' } 
+                    document.body.style.backgroundImage = 'url("./images_weather_app/bckgr_sun.png")' } 
                     else if (temp >= 4 && temp <= 14){
-                        document.body.style.backgroundImage = 'url("../webproject/images_weather_app/backgr_clouds.png")' } 
+                        document.body.style.backgroundImage = 'url("./images_weather_app/backgr_clouds.png")' } 
                     else  {
-                        document.body.style.backgroundImage = 'url("../webproject/images_weather_app/bckr_snow.png")' }  
+                        document.body.style.backgroundImage = 'url("./images_weather_app/bckr_snow.png")' }  
 
 
     }
