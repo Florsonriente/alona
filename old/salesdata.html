@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deforestation Data</title>
+</head>
+<body>
+  <h1>Deforestation Data</h1>
+  <div id="deforestationData"></div>
+
+  <script>
+
+  // Function to fetch deforestation data from Global Forest Watch API
+  async function fetchDeforestationData() {
+    try {
+      // Construct the API URL
+      const apiUrl = 'https://production-api.globalforestwatch.org/v1/deforestation-alerts?aggregate_values=1&group=day&period=year&threshold=30';
+  
+      // Make a fetch request to retrieve data
+      const response = await fetch(apiUrl);
+  
+      // Check if the request was successful
+      if (!response.ok) {
+        throw new Error('Failed to fetch deforestation data');
+      }
+  
+      // Parse response JSON
+      const data = await response.json();
+  
+      // Extract relevant data (e.g., total alerts, area deforested)
+      const totalAlerts = data.data.attributes.total_alerts;
+      const areaDeforested = data.data.attributes.area__ha;
+  
+      // Display the data on the webpage
+      document.getElementById('deforestationData').innerHTML = `
+        <p>Total alerts: ${totalAlerts}</p>
+        <p>Area deforested (ha): ${areaDeforested}</p>
+      `;
+    } catch (error) {
+      console.error('Error fetching deforestation data:', error);
+      document.getElementById('deforestationData').innerText = 'Failed to fetch deforestation data';
+    }
+  }
+  
+  // Example usage: Fetch deforestation data
+  fetchDeforestationData();
+
+</script>
+  
+</body>
+</html>
