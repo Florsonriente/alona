@@ -235,6 +235,11 @@ animation: walk 1.2s infinite steps(7);
    
   }
 
+  .details{
+    flex-direction: column;
+    gap:1em;
+  }
+
     }
     
     @media only screen and (max-width: 410px) {

@@ -48,7 +48,7 @@ justify-content: space-between;
   justify-content: center;
   margin: auto;
   padding-top: 3em;
-  color:yellow;
+  color:/*#555*/#198c99;
   text-align: center;
   
 
@@ -122,7 +122,7 @@ background: linear-gradient(#e8615c,#c000c7);
 background: linear-gradient(#f7a6bd, #86bbcf);
 background: linear-gradient(#f7a6bd, #86bbcf);
 background: #054AD8;
-background: linear-gradient(#c000c7, #00b5c7);*/background: linear-gradient(#f7a6bd, #86bbcf);
+background: linear-gradient(#c000c7, #00b5c7);*/
 color:white;
 width:100%;
 border:none;
@@ -138,17 +138,24 @@ align-items: center;
 font-size: 1em;
 }
 
+.btn{
+  background: linear-gradient(#f7a6bd, #86bbcf);
+
+}
+
 
 
 .btn:hover:not([disabled]), #next-btn:hover{
   background:/*#223661;#F7A6BD;*/#198c99;
   color:#fff;
 }
+
 .btn:disabled{
   cursor:no-drop;
 }
 
 #next-btn {
+  background-color:#198c99;
   width:140px;
   margin:12em auto 5%;
   display: none;
@@ -211,8 +218,38 @@ text-align: center;
 @media only screen and (max-width: 800px) {
 .container{
   padding:1em;
+  margin-bottom: 10em;
+ }
+
+.start h1{
+  font-size: 1.5em;
+}
+
+.quiz h2 {
+  font-size: 1em;
+}
+
+#comments{
+  font-size: 0.7em;
+  width: 90%;
+}
+
+#next-btn {
+  width:140px;
+  margin:3em auto 5%;
+  font-size: 0.7em;
+
 }
 }
+
+#answer-buttons{
+grid-template-columns: 60%;
+}
+
+.btn{
+  font-size:0.7em;
+}
+
 
 @media only screen and (max-width: 350px) {
  

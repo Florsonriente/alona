@@ -106,7 +106,7 @@ background-color: black;
   display: flex;
   justify-content: center;
   margin: auto;
-  padding-top: 2em;
+  padding-top: 3em;
  
 
 }
@@ -231,9 +231,38 @@ width: 90%;
   .studies {
     width: 100%;
   }
+
+
+  .page1, .page2 {
+    animation: none !important;}
   }
+
+  @media only screen and (max-width: 800px) {
+    .itaboutmaincontainer, .aboutmaincontainer {
+     padding: 1em;}
+
+     .itaboutmaincontainer h1, .start h1 {
+      font-size: 1.5em;}
+
+
+     .pic img {
+      width:200px;
+  padding-top: 2em;
+     }
+
+
+     .work, .studies{
+padding:0em;
+     }
+
+      .bars{
+      padding-bottom:10em;
+           }
+
+    }
+
   @media only screen and (max-width: 700px) {
-    .page2{
+    .page2,.page1 {
       height:auto;
     }
   }
