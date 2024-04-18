@@ -240,22 +240,24 @@ main {
 }
 
 #right-side {
-  /*background-color: var(--right-color);*/
-  background-color: black;
+  /*background-color: var(--right-color);
+  background-color: black;*/
+  background-image: url(../pics/be__the__art_large_color_blobs_covering_the_whole_screen_flat.png);
+  background-size: cover;
 }
 
 #right-side .title {
-  color: var(--dark);
+  color: black;
 }
 
 #right-side .cool,
 #last-name {
   /*color: var(--dark);*/
-  color: #09ff84;
+  color: #000000;
 }
 
 #first-name {
-  color: var(--dark);
+  color: black;
 }
 
 /*#backend{

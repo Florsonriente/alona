@@ -175,7 +175,7 @@ font-size: 1em;
 
 #answer-buttons {
   display: grid;
-  grid-template-columns: 40% 40%;
+ grid-template-columns: 40% 40%;
   justify-content: center;
   
 gap:1em;
@@ -238,17 +238,27 @@ text-align: center;
   width:140px;
   margin:3em auto 5%;
   font-size: 0.7em;
-
-}
-}
-
-#answer-buttons{
-grid-template-columns: 60%;
 }
 
 .btn{
   font-size:0.7em;
 }
+
+
+#answer-buttons {
+  display: grid;
+  grid-template-columns: 60%;}
+
+
+
+  .app {
+    width:400px;
+  }
+
+}
+
+
+
 
 
 @media only screen and (max-width: 350px) {

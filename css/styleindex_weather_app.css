@@ -187,7 +187,7 @@ width:100%;
 .col img{
   width:40px;
   margin-right:10px;
-  /*filter:invert(1);*/
+  filter:invert(1);
 }
 
 .humidity, .wind {
@@ -225,20 +225,32 @@ animation: walk 1.2s infinite steps(7);
       padding:1em;
     }
 
+    .start h1{
+      font-size: 1.5em;
+    }
+    
+
     .weather h1,  .weather h2
      {
-      font-size: 40px;
+      font-size: 30px;
   }
 
   .search input{
      font-size: 1.5em;
-   
-  }
+    }
+
+    .card {
+      width:400px;
+    }
 
   .details{
     flex-direction: column;
     gap:1em;
   }
+
+  .search button img {
+    width: 26px;
+    }
 
     }
     
