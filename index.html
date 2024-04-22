@@ -192,7 +192,7 @@ const handleMovement = (event) => {
   const clientX = event.touches ? event.touches[0].clientX : event.clientX;
   const newWidthPercentage = (clientX / window.innerWidth) * 100;
   leftSideElement.style.width = `${newWidthPercentage}%`;
-  mobileToggle.style.color = 'red';
+  //mobileToggle.style.color = 'red';
 
 
 };
@@ -223,6 +223,7 @@ document.addEventListener("touchmove", (event) => handleMovement(event));
   "ABCDEFGHIJKLMNOPQRSTUVWXYZ"[Math.floor(Math.random() * 26)];*/
 
 // Enhance text by wrapping each letter in a span with class 'letter'
+/*
 
 const enhanceTextWithSpans = (id) => {
   const element = document.getElementById(id);
@@ -240,7 +241,7 @@ const enhanceTextWithSpans = (id) => {
 document
   .getElementById("backend");
  // .addEventListener("mousemove", animateTextChange);
- enhanceTextWithSpans("frontend");
+ enhanceTextWithSpans("frontend");*/
 
 </script>
     </html>
