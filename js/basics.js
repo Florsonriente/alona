@@ -95,3 +95,67 @@ for (let i = 1; i <=60; i++) {
                         console.log(i);
       }
   }
+
+
+  
+let array = ["world", "hello", "abc"]
+array.shift[2];
+array.shift[1];
+array.pop["hello"]
+
+console.log(array);
+
+////////////////////////
+let array = ["world", "hello", "abc"]
+let add1 = array.pop();
+let add2 = array.pop();
+let add3 = array.unshift("Hello");
+
+console.log(array)
+
+
+
+////////////////////////
+
+
+let numbersArray = [1, 12, 5, 45, 7];
+const numbersArrayNew = numbersArray.map(function(number){
+    return number*number
+});
+const numbersArrayNewFiltered = numbersArrayNew.filter(function(number){
+    return number < 100;
+})
+
+const numbersArrayNewForEach = numbersArray.forEach(function(number){
+    return number*number
+});
+
+
+console.log(numbersArrayNew) 
+console.log(numbersArrayNewFiltered) 
+console.log(numbersArrayNewForEach) 
+
+
+let namesArray = ["henry", "bella", "sibel", "tina"];
+const result6 = namesArray.every(function(word){
+    if (typeof word  === "string") {
+        return true;
+    }})
+
+console.log(result6)
+
+let namesArrayJohn = namesArray.unshift("john");
+console.log(namesArray)
+
+let namesArrayJohnSorted = namesArrayJohn.sort();
+console.log(namesArrayJohnSorted);
+
+/////////////// splice
+
+let arr17= ["Jan", "mar", "apr", "jun"];
+//inserts at index 1
+arr17.splice(1, 0, "feb");
+console.log(arr17)
+//reolaces element at place 4
+arr17.splice(4,1, "may");
+console.log(arr17)

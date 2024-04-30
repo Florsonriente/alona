@@ -20,10 +20,11 @@ body {
  /* background-color: #ffffff;*/
 position:relative;
 /*background-image: url(../pics/be__the__art_large_color_blobs_covering_the_whole_screen_flat.png);*/
-background-image: url(../images_quiz/bckgr3.png);
+/*background-image: url(../images_quiz/bckgr3.png);*/
 background-size: cover;
 background-repeat: repeat;
-height:100vh;
+height:120vh;
+background-color: black;
 
 }
 main{
@@ -48,7 +49,7 @@ justify-content: space-between;
   justify-content: center;
   margin: auto;
   padding-top: 3em;
-  color:/*#555*/#198c99;
+  color:/*#555*/white;
   text-align: center;
   
 
@@ -81,12 +82,12 @@ left:50%;
 transform: translate(-50%,-50%);*/
 margin:auto;
 display:block;
+background: yellow;
 
 
-
-background-color: rgba(233, 233, 230, 0.607);
-color:#555/*white;*/;
-  /* margin:0px auto 100px;*/
+/*background-color: rgba(233, 233, 230, 0.607);
+color:#555/*white;;*/
+   margin:0px auto 100px;*/
  border-radius:20px;
  padding: 2em;
 }
@@ -111,7 +112,7 @@ border-radius: 15px;
 
 .quiz h2{
   padding-bottom:5%;
-  color:/*#555*/#198c99;
+  color:/*#555#198c99;*/black;
   text-align: center;
 
 }
@@ -136,18 +137,21 @@ justify-content: center;
 display: flex;
 align-items: center;
 font-size: 1em;
+transition:all 400ms ease-in-out;
 }
 
 .btn{
-  background: linear-gradient(#f7a6bd, #86bbcf);
+  /*background: linear-gradient(#f7a6bd, #86bbcf);*/
+  background-color: black;
+
 
 }
 
 
 
 .btn:hover:not([disabled]), #next-btn:hover{
-  background:/*#223661;#F7A6BD;*/#198c99;
-  color:#fff;
+/*  background:#223661;#F7A6BD;#198c99;*/
+  color:black;
 }
 
 .btn:disabled{
@@ -155,7 +159,8 @@ font-size: 1em;
 }
 
 #next-btn {
-  background-color:#198c99;
+  background-color:white;
+  color: black;
   width:140px;
   margin:12em auto 5%;
   display: none;
@@ -195,19 +200,19 @@ gap:1em;
   margin:auto;
   justify-content: center;
   align-items: center;
-  background-color:/*#EBD5DE; #B9D0D6*/#198c99;
+  background-color:/*#EBD5DE; #B9D0D6#198c99*/white;
 
   /*width:140%;
   height:40%;*/
 
   z-index:2;
-  color:/*#555*/white;;
+  color:/*#555*/black;
   position:absolute;
-top:40%;
-left:50%;
-transform: translate(-50%,-40%);
-border-radius: 30px;
-text-align: center;
+  top:40%;
+  left:50%;
+  transform: translate(-50%,-40%);
+  border-radius: 30px;
+  text-align: center;
 }
 
 

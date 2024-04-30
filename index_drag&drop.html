@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Language game & my life credo</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 
 
  
@@ -51,10 +54,10 @@
 
  
 <div class="maincontainer">
-  <div class="title"><h1> Pick up the right word and place it to a right language column. <br> <br> When the words are correctly placed, u will get the translation of the secret phrase in English.<br> <br> The sentence to be appeared at the end is my life credo.  <br> <br> So now you know me a little bit better!
+  <div class="title"><h1> Pick up the word and drag it to a column. <br> <br> When the words are correctly placed, u will get the translation of the secret phrase in English.<br> <br> The sentence to be appeared at the end is my life credo.  <br> <br> So now you know me a little bit better!
  </h1>
  <div class="block">
-    <h2>Pick up the word & drag to a language box</h2>
+    <h2>Pick up the word & drag it right</h2>
     <div id="left">
     <div class="listspanish" id="vive" draggable="true"><img src="./images_drag_and_drop/drag_drop_icon.png" draggable="false">Vive   </div>
     <div class="listitalian" id="vivi" draggable="true"><img src="./images_drag_and_drop/drag_drop_icon.png" draggable="false">Vivi</div>
@@ -140,12 +143,12 @@ function checkCompletion() {
     document.body.style.backgroundSize = "cover";
     document.querySelector(".container").style.background = "transparent"; alertShown*/
     document.querySelector(".maincontainer").style.flexDirection="column";
-    document.querySelector(".maincontainer").style.backgroundColor="rgba(233, 233, 230, 0.607)";
+    document.querySelector(".maincontainer").style.display="flex";
     document.querySelector(".maincontainer").style.borderRadius="20px";
     document.querySelector(".maincontainer").style.width="70%";
 
     document.querySelector(".start h1").innerText = "Good Job! Thanks for playing!";
-    document.querySelector(".start h1").style.paddingBottom = "2em";
+    /*document.querySelector(".start h1").style.paddingBottom = "2em";*/
 
     document.getElementById("left").style.border = "none";
     document.getElementById("spanish").style.border = "none";
@@ -298,7 +301,8 @@ for (let list of listsitalian) {
 <!--OPEN CLOSE NAVIGATION -->
      
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!----><script>
+<script src="./js/main.js"></script>
+<!--<script>
         
         $(document).ready(function() {
     $('.mobile-toggle').click(function() {
@@ -348,7 +352,7 @@ for (let list of listsitalian) {
     </script>
 
 
-<!--IMAGES EFFECT ON HOVER IN NAVIGATION -->
+IMAGES EFFECT ON HOVER IN NAVIGATION 
 
 <script>
 document.querySelectorAll('.left > li').forEach(function(li, index) {
@@ -373,7 +377,7 @@ document.querySelectorAll('.left > li').forEach(function(li, index) {
 </script>  
 
 
-<!--
+
     COOL CURSOR
 
 <script>
@@ -388,7 +392,7 @@ document.body.addEventListener("mouseover", function(e) {
 });-->
 
 
-</script>
+
   
 
 

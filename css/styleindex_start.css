@@ -207,13 +207,13 @@ nav{
 }
 
 #right-side .title {
-  color: black;
+  color: white;
 }
 
 #right-side .cool,
 #last-name {
   /*color: var(--dark);*/
-  color: #000000;
+  color: white;
 }
 
 #first-name {
