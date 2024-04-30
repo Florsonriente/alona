@@ -20,7 +20,7 @@ body {
  /* background-color: #ffffff;*/
 position:relative;
 /*background-image: url(../pics/be__the__art_large_color_blobs_covering_the_whole_screen_flat.png);*/
-/*background-image: url(../images_quiz/bckgr3.png);*/
+/**/background-image: url(../images_quiz/bckgr3.png);
 background-size: cover;
 background-repeat: repeat;
 height:120vh;
@@ -82,7 +82,7 @@ left:50%;
 transform: translate(-50%,-50%);*/
 margin:auto;
 display:block;
-background: yellow;
+background:#ebff00;;
 
 
 /*background-color: rgba(233, 233, 230, 0.607);
