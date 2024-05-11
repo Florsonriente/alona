@@ -22,7 +22,7 @@ position:relative;
 /*background-image: url(../pics/be__the__art_large_color_blobs_covering_the_whole_screen_flat.png);*/
 /**/background-image: url(../images_quiz/bckgr3.png);
 background-size: cover;
-background-repeat: repeat;
+background-repeat: no-repeat;
 height:120vh;
 background-color: black;
 
@@ -82,7 +82,7 @@ left:50%;
 transform: translate(-50%,-50%);*/
 margin:auto;
 display:block;
-background:#ebff00;;
+/*background:#ebff00;
 
 
 /*background-color: rgba(233, 233, 230, 0.607);
@@ -149,11 +149,11 @@ transition:all 400ms ease-in-out;
 
 
 
-.btn:hover:not([disabled]), #next-btn:hover{
-/*  background:#223661;#F7A6BD;#198c99;*/
+/*.btn:hover:not([disabled]), #next-btn:hover{
+  background:#223661;#F7A6BD;#198c99;
   color:black;
 }
-
+*/
 .btn:disabled{
   cursor:no-drop;
 }

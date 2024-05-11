@@ -21,10 +21,11 @@ $(document).ready(function() {
             if ($(window).width() < 800) {
         // If screen width is less than 700px, set header link color to green
         $('header a').css('color', 'transparent');
+        $('nav').css('background-color', 'transparent');//handy nachdem ich das menu aufmache und dann wieder zu,ache
     } else {
         // Otherwise, set header link color to white
         $('header a').css('color', 'white');
-        $('nav').css('background-color', 'black');
+        $('nav').css('background-color', 'transparent');
         
         
     }

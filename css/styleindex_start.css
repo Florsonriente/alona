@@ -78,7 +78,7 @@ body > div > div.cases > div:nth-child(7) > h1
   color: #ebff00;
   line-height: 0.3;
   text-transform: lowercase;
-  background-image: url(../images_weather_app/clouds4.gif);
+
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
@@ -202,7 +202,7 @@ nav{
 #right-side {
   /*background-color: var(--right-color);
   background-color: black;*/
-  background-image: url(../pics/be__the__art_large_color_blobs_covering_the_whole_screen_flat.png);
+  background-image: url(../pics/oldmanlaufeyson_clouds_of_data_fine_art_photography_fashion_mag_d06afed8-0d04-4b12-af34-40ca5b291693.png);
   background-size: cover;
 }
 

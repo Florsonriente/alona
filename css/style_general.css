@@ -179,12 +179,12 @@ transition: all 400ms ease-in;
   -o-transition: all 400ms ease-in;
 }
 
-button:hover a{
+/*button:hover a{
   color: #000000;
   }
   button:hover {
     background-color: #ffffff;
-    }
+    }*/
 
     /*hedaer hover animation*/
 
