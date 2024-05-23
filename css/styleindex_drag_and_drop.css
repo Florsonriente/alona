@@ -30,7 +30,7 @@ background-color: black;*/
 position:relative;
 width:100%;
 min-height:100vh;
-cursor: inherit !important;;
+cursor: inherit !important;
 
 }
 body img {
@@ -219,6 +219,9 @@ font-size:0.8em;
 @media only screen and (max-width: 800px) {
   .maincontainer{
     padding:1em;
+  }
+  .start h1{
+    font-size:1.5em;
   }
   }
 

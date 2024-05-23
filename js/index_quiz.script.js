@@ -7,8 +7,8 @@ const questions = [
         {text: "Russia", correct: false},
         {text: "Germany", correct: false},
     ],
-    correctComment: "Congratulations! You chose the correct country.To pay my studies in Master Marketing, I had to go through many challenges like waorking and studying at the same time, like team work with multiple nationalities and leraning fluently French.",
-    incorrectComment: "Sorry, that's incorrect. The correct country is France. To pay my studies in Master Marketing, I had to go through many challenges like waorking and studying at the same time, like team work with multiple nationalities and leraning fluently French."
+    correctComment: "Congratulations! You chose the correct country.I studied Marketing as a Master Defree in France at Sophie Antipolis Universite de Nice and lived in France for 2 years. For my studies I used to speak French at a B2 level every day and coordinate with many people from different nationalities for team projects.",
+    incorrectComment: "Sorry, that's incorrect. The correct country is France. I studied Marketing as a Master Defree in France at Sophie Antipolis Universite de Nice and lived in France for 2 years. For my studies I used to speak French at a B2 level every day and coordinate with many people from different nationalities for team projects."
 },
 {
     question: "The coolest event I took part in",
@@ -18,8 +18,8 @@ const questions = [
         {text: "Singing competition", correct: false},
         {text: "Cooking courses", correct: false},
     ],
-    correctComment: "Yes! Dance Championship is the event I'm proud to be a part of. I was dancing hip-hop and took the 14 place out of 149 participants:)",
-    incorrectComment: "The correct answer is Worlwide Dance Championship where I was dancing hip-hop and took the 14 place out of 149 participants:)."
+    correctComment: "Yes! Dance Championship! I used to go in for dancing professionally as I was a teenager. U used to participate in Championships and to compete with others. Competition is a part of my nature and my pure motivation.",
+    incorrectComment: "The correct answer is Worlwide Dance Championship. I used to go in for dancing professionally as I was a teenager and to participate in dance Championships and to compete with others. Competition is a part of my nature and my pure motivation."
 
 },
 {
@@ -30,8 +30,8 @@ const questions = [
         {text: "13", correct: false},
         {text: "5", correct: false},
     ],
-    correctComment: "Yes! So many languages. I've learnt English, German, French, Spanish, Italian, Polish and Turkish. And I speak Russian too. Though I have B2 certificate in French, I use in my daily life German and at home we speak only Ukrainian.",
-    incorrectComment: "No, not so many languages.I've learnt English, German, French, Spanish, Italian, Polish and Turkish. And I speak Russian too. Though I have B2 certificate in French and I miss speaking French. In my daily life I use German and at home we speak only Ukrainian."
+    correctComment: "Yes! So many languages. I've learnt English, German, French, Spanish, Italian, Polish and Turkish. And I speak Russian too. I am curious and good in learning languages because I have a structured thinking and being creative. The more languages - the more doors to people and opportunities open.",
+    incorrectComment: "No, not so many languages.I've learnt English, German, French, Spanish, Italian, Polish and Turkish. And I speak Russian too. I am curious and good in learning languages because I have a structured thinking and being creative. The more languages - the more doors to people and opportunities open."
 
 },
 {
@@ -42,8 +42,8 @@ const questions = [
         {text: "Has a good feeling of German", correct: false},
         {text: "Needs always wine for motivation", correct: false},
     ],
-    correctComment: "Yep!!! I also do think so!!!",
-    incorrectComment: "No, not really. People usually say that Im very engaged and hardworking, goal-oriented person. "
+    correctComment: "Yep!!! I also do think so!!! My colleagues also used to say about me, that you can always teach skills but never teach the attitude. ",
+    incorrectComment: "No, not really. People usually say that I'm very engaged and hardworking, goal-oriented person. They say, you can always teach skills but never teach the attitude. "
 
 }
 

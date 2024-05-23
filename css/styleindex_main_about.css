@@ -10,6 +10,7 @@
   text-decoration: 0;
   box-sizing: border-box;
   font-family: poppins;
+
 }
 
 body {
@@ -163,6 +164,10 @@ width: 90%;
    .page1 {
     height: 100vh;  
     opacity: 1;
+    }
+
+  .page2{
+    width:100vw;
   }
 
   .page3{
@@ -177,7 +182,7 @@ width: 90%;
     height:40vh;
 
 }
-  .page3 h1{
+  .page3 h2{
     font-weight: 300;
     padding-bottom: 1em;
     text-align: left;
@@ -231,7 +236,18 @@ width: 90%;
 
   .page1, .page2 {
     animation: none !important;}
-  }
+
+
+    body > div > div.page2 > div.itaboutmaincontainer > div.video > video{
+      width:500px;
+    }
+.page3{
+    align-items: center;}
+
+    .buttons_about {
+      flex-direction: column;
+      gap: 1em;
+  }}
 
   @media only screen and (max-width: 800px) {
     .itaboutmaincontainer, .aboutmaincontainer {
@@ -262,3 +278,8 @@ padding:0em;
       height:auto;
     }
   }
+
+  @media only screen and (max-width: 350px){
+  body > div > div.page2 > div.itaboutmaincontainer > div.video > video{
+    width:300px;
+  }}

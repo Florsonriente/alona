@@ -79,15 +79,4 @@ document.querySelectorAll('.left > li').forEach(function(li, index) {
 
 
 
-    // COOL CURSOR
-
-
-var cursor = document.getElementById("cursor");
-document.body.addEventListener("mousemove", function(e) {
-    cursor.style.left = e.clientX + "px";
-    cursor.style.top = e.clientY + "px";
-});
-
-document.body.addEventListener("mouseover", function(e) {
-    cursor.style.border = '3px solid red'; // Change border to red
-});
+  

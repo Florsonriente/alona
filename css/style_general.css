@@ -26,7 +26,7 @@
   height: 4px;
   margin-bottom: 6px;
   border-radius: 1000px;
-  color: #ebff00;
+  color: white;
   display: block;
   transition: background 200ms ease-in;
   cursor: grab;
@@ -149,7 +149,7 @@ cursor:grab;
 button{
 padding:1.5em;
 
-background-color: /*#555*/#ebff00;
+background-color: /*#555#ebff00;*/white;
 font-weight: 300;
 font-size:1.3em;
 font-weight: 600;
@@ -194,36 +194,7 @@ transition: all 400ms ease-in;
 }
 
 
-/*COOL CURSOR*/
-body {
-  cursor: none; 
-}
 
-/* Define the custom cursor */
-.cursor {
-  position: fixed;
- border-radius: 50%;
-  /**/ transform: translateX(-50%) translateY(-50%);
-  pointer-events: none;
-  left: -100px;
-  top: 50%;
-  mix-blend-mode: difference; 
-  background-color: transparent;
-  z-index: 10000;
-  /*border: 8px solid white;*/
-  height: 60px;
-  width: 60px;
-  transition: all 200ms ease-out;
-  /*background:white;
-
-  background: #f27121;
-background: -webkit-radial-gradient(circle, #f27121 0%, #e94057 50%, #8a2387 100%);
-background: radial-gradient(circle, #f27121 0%, #e94057 50%, #8a2387 100%);
-
-background: radial-gradient(circle, transparent 20%, #000000 20%, #000000 80%, transparent 80%, transparent) 0% 0% / 200px 200px, radial-gradient(circle, transparent 20%, #000000 20%, #000000 80%, transparent 80%, transparent) 100px 100px / 200px 200px, linear-gradient(#fffd47 8px, transparent 8px) 0px -4px / 100px 100px, linear-gradient(90deg, #fffd47 8px, #000000 8px) -4px 0px / 100px 100px #000000;
-*/background-size: 200px 200px, 200px 200px, 100px 100px, 100px 100px;
-background-color: #000000;
-}
 
 
 

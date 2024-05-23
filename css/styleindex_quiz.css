@@ -12,7 +12,7 @@
   color:white;
    font-family: Poppins, sans-serif;
    font-weight: 600;
- 
+   
 
 }
 
@@ -25,6 +25,7 @@ background-size: cover;
 background-repeat: no-repeat;
 height:120vh;
 background-color: black;
+cursor: inherit !important;
 
 }
 main{
