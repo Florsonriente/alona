@@ -125,6 +125,45 @@ background-color: black;
 .work {
 width: 90%;
 }
+.itprojects{
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+
+
+
+.images{
+  display: grid;
+  grid-template-columns: repeat(5,70px);
+  grid-template-rows: repeat(6, 70px);
+}
+
+/*IMAGES IN PROJECTS GRID*/
+
+body > div > div.page2 > div.itaboutmaincontainer > div.work > div > div.images > img:nth-child(6){
+  grid-column-start: 6;
+    grid-row-start: 6; 
+}
+body > div > div.page2 > div.itaboutmaincontainer > div.work > div > div.images > img:nth-child(5)
+{
+  grid-column-start: 5;
+    grid-row-start: 5;
+}
+
+body > div > div.page2 > div.itaboutmaincontainer > div.work > div > div.images > img:nth-child(4){
+  GRID-COLUMN-START: 4;
+    grid-row-start: 4;
+}
+body > div > div.page2 > div.itaboutmaincontainer > div.work > div > div.images > img:nth-child(3)
+{
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+
+body > div > div.page2 > div.itaboutmaincontainer > div.work > div > div.images > img:nth-child(2){
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
 
 .progress {
     height: 8px;
@@ -232,6 +271,9 @@ width: 90%;
   .studies, .work {
     width: 90%;
   }
+  .itprojects{
+        grid-template-columns: 1fr;
+    }
 
 
   .page1, .page2 {

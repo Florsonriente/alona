@@ -1,26 +1,109 @@
-body {
-    background-color: #7f0920;
-    color: #0a0408;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Lobster&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+  list-style-type: none;
+  text-decoration: none;
+  padding:0;
+  margin: 0;
+  text-decoration: 0;
+  box-sizing: border-box;
+  font-family: 'poppins';
+  cursor: inherit !important;
+ 
 }
+
+body {
+
+position:relative;
+width:100%;
+min-height:100vh;
+background-image: url(../pics/3d-rendering-popcorn-snack-movies_23-2151169536.jpg);
+/*background-image: url(../pics/cloud_pink.png);*/
+background-size: cover;
+background-repeat: no-repeat;
+background-position: top center;
+
+}
+
+main{
+   background-image: url(../images_weather_app/clouds3.gif);  
+
+}
+
+.start h1{
+  
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 3em;
+    
+    font-weight: 600;
+    color:yellow;
+    text-align: center;
+    
+  
+}
+
+.maincontainer {
+  display: flex;
+  
+    flex-direction: row;
+    justify-content: center;
+   /* align-items: flex-start;*/
+    padding:3em 5em;
+
+    gap:2em;
+}
+
+
+
+.title{
+  display: none;
+  color:#555/*white;*/;
+  width:90%;
+  max-width:470px;
+  background-color: rgba(233, 233, 230, 0.607);
+  border-radius:20px;
+}
+.title h1{
+  text-align: center;
+  /*font-size:2em;*/
+  margin:0px auto 100px;
+  color:#555/*white;*/;
+  font-weight: 400;
+  
+ 
+  padding: 2em;
+  text-align: center;
+  font-size:1.3em;
+}
+
 
 #appTitle {
     text-align: center;
     margin: 0px auto;
     display: block;
-    font-family: 'Staatliches', sans-serif;
-    font-size: 80px;
+   /* font-family: 'Staatliches', sans-serif;
+    font-size: 80px;*/
 }
 
 #genreForm, #playBtn {
     text-align: center;
     margin: 0px auto;
     display: block;
-    font-family: 'Fredoka One', sans-serif;
+    /*font-family: 'Fredoka One', sans-serif;*/
+    cursor: pointer!important;
 }
 
 #movieInfo {
     width:  65%;
     margin:  32px auto;
+    margin-bottom: 15em;
 }
 
 #movieInfo:after {
@@ -39,10 +122,11 @@ img#moviePoster {
     height:  auto;
     display:  block;
     margin:  auto;
+    border-radius:20px;
 }
 
 #movieText {
-    font-family: 'Questrial';
+   /* font-family: 'Questrial';*/
     color: #FEFBEA;
     line-height: 1.25;
 }
@@ -53,13 +137,11 @@ img#moviePoster {
 
 #playBtn {
     margin-top: 20px;
-    font-size: 25px;
-    padding: 7px 10px;
-    border-radius: 10px;
+    /* font-size: 25px; */
+    padding: 1em;
+    border-radius: 1em;
     border-style: none;
-    background-color: #B97828;
-    color: #fdc238;
-    cursor:  pointer;
+    cursor: pointer !important;
 }
 
 label {
@@ -71,27 +153,54 @@ label {
 select {
     width: 200px;
     height: auto;
+    border-radius: 1em;
+    border: none;
+    padding: 1em;
+    background: #ffffff7a;
+    font-size: 1em;
 }
 
 #likeOrDislikeBtns {
     text-align: center;
     margin: 0px auto;  
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 #likeBtn, #dislikeBtn {
-    padding: 15px 25px;
-    font-size: 25px;
+  
+    font-size: 3em;
     border-radius: 12px;
     border-style: none;
-    cursor:  pointer;
+    cursor: pointer!important;
 }
 
 #likeBtn {
-    background-color: #249e57;
-    color: darkgreen;
+    background-color: transparent;
+   
 }
 
 #dislikeBtn {
-    background-color: #c74a4a;
-    color: #910000;
+    background-color: transparent;
+ 
+}
+
+.fa-thumbs-up, .fa-thumbs-down {
+    color:yellow;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    .maincontainer{
+      padding:1em;
+    }
+
+    .start h1{
+      font-size: 1.5em;
+    }
 }
