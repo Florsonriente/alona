@@ -97,41 +97,48 @@
                       <div class = "itprojects" >
                       
                      <div class="description">
-                        <h1>Latest IT Projects</h1>
-                        <a href="https://www.flayr.de"><h2>- Website for a creative agency: www.flayr.de</h2></a>
+  <h1>Latest IT Projects</h1>
+
+  <div class="description_project">
+                        <a  href="https://www.flayr.de"><h2>- Website for a creative agency: www.flayr.de</h2></a>
                         <h2>Key skills: Wordspress, CSS Grid Layouting, Java Script DOM Manipulation, Responsive Design</h2>
                         <br>
-                                                <a href="https://florsonriente.github.io/redi/"><h2>- Aesthetic minimalism - CO2 awareness : https://florsonriente.github.io/redi </h2></a>
+                      </div>
+<div class="description_project">                         
+                        <a href="https://florsonriente.github.io/redi/"><h2>- Aesthetic minimalism - CO2 awareness : https://florsonriente.github.io/redi </h2></a>
                         <h2>Key skills: HTML, Java Script Functions, Fetch API, async await, Conditionals, User Inputs, CSS Layouting, Styling, Designing</h2>
                         <br>
-                        <a href="https://www.airsense.live/"><h2>- Website for air-analytics supplier: www.airsense.live</h2></a>
-                        <h2>Key skills: Wordpress, Responsive Design</h2>
-                        <br>
-                        
-                        <a href="https://florsonriente.github.io/alona/index_weather_app.html"><h2>- Weather app with interactive background </h2></a>
+                      </div>
+<div class="description_project"> 
+                     <a href="https://www.airsense.live/"><h2>- Website for air-analytics supplier: www.airsense.live</h2></a><h2>Key skills: Wordpress, Responsive Design</h2> <br> 
+                      </div>                    
+<div class="description_project"  >
+                        <a  href="https://florsonriente.github.io/alona/index_weather_app.html"><h2>- Weather app with interactive background </h2></a>
                         <h2>Key skills: HTML, Java Script Fetch API, async await, Conditionals, User Inputs</h2>
                         <br>
-
-                        <a href="https://florsonriente.github.io/alona/index_drag&drop.html"><h2>- Language game with my life credo </h2></a>
+                      </div>
+ <div class="description_project">
+                        <a  href="https://florsonriente.github.io/alona/index_drag&drop.html"><h2>- Language game with my life credo </h2></a>
                         <h2>Key skills: HTML, Java Script Drag & Drop, Conditionals, CSS Layouting</h2>
                         <br>
-
+                      </div>
+ <div class="description_project" >
                         <a href="https://florsonriente.github.io/alona/movie_project_index.html"><h2>- Movie generator </h2></a>
                         <h2>Key skills: HTML, Java Script Fetch APIs, CSS Layouting</h2>
                         <br>
-
+                      </div>
 
 
                          <br>
-                        </div>
-                        <div class="images">
-                          <img src="./pics/flayr.PNG" alt="" width="300px">
+                     </div>
+                        <div class="description_images">
+                          <img class="images"src="./pics/flayr.PNG" alt="" width="300px">
                         
-                          <img src="./pics/screenshot_sustainability_project.PNG" alt="" width="300px">
-                          <img src="./pics/air_nse.png" alt="" width="300px">
-                          <img src="./pics/weather.PNG" alt="" width="300px">
-                          <img src="./pics/language game.PNG" alt="" width="300px">
-                          <img src="./pics/movie.PNG" alt="" width="300px">
+                          <img class="images"src="./pics/screenshot_sustainability_project.PNG" alt="" width="300px">
+                          <img class="images"src="./pics/air_nse.png" alt="" width="300px">
+                          <img class="images"src="./pics/weather.PNG" alt="" width="300px">
+                          <img class="images"src="./pics/language game.PNG" alt="" width="300px">
+                          <img class="images"src="./pics/movie.PNG" alt="" width="300px">
 
                         </div>
                         </div>
@@ -255,100 +262,42 @@
      
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="./js/main.js"></script>
-<!--
-<script>
-        
-        $(document).ready(function() {
-    $('.mobile-toggle').click(function() {
-        var isOpen = $(this).hasClass('open');
 
-        if (isOpen) {
-            $(this).removeClass('open');
-          $(this).find('span').text('☰'); //Change text to hamburger icon
-            $('header li, .portfolioheader li').css('transform', 'rotate(-90deg)');
-            $('ul').css('width', ''); // Remove width property
-            $('.right').css('display', 'none');
-            $('ul').css('flex-direction', 'column');
-            $('header a').css('font-size', '1em');
-            $('header a').css('font-weight', '300');
-            $('header a').css('text-transform', 'none');
-            $('nav').css('background-color', 'transparent');
-            if ($(window).width() < 800) {
-        // If screen width is less than 700px, set header link color to green
-        $('header a').css('color', 'transparent');
-    } else {
-        // Otherwise, set header link color to white
-        $('header a').css('color', 'white');
+    <script>
+
+
+function pushImageForward(event){
+  const descriptionProjects = document.querySelectorAll(".description_project");
+      const images = document.querySelectorAll(".images");
+
+  const index = Array.from(descriptionProjects).indexOf(event.target);
+  if (index !== -1 && images[index]) {
+    images[index].style.zIndex = "100000";
+      images[index].style.transform = "scale(1.3)"; // Corrected transform property
+      images[index].style.transition = "transform 0.6s";
+      console.log("Image brought to front with z-index 100000 and scaled up");
     }
-            
+  }
 
-        } else {
-            $(this).addClass('open');
-            $(this).find('span').text('✕'); //Change text to close icon
-            $('header li, .portfolioheader li').css('transform', 'rotate(0deg)');
-            $('ul').css('width', '100vw');
-            $('.right').css('display', 'block');
-            $('.left').css('display', 'flex');
-            $('.left').css('width', '70%');
-            $('ul').css('flex-direction', 'row');
-            $('header a').css('font-size', '4em');
-            $('header a').css('font-weight', '900');
-            $('header a').css('text-transform', 'lowercase');
-            $('nav').css('background-color', 'black');
-            $('header a').css('color', 'white');
+  function resetImageZIndex(event) {
+    const descriptionProjects = document.querySelectorAll(".description_project");
+    const images = document.querySelectorAll(".images");
 
+    const index = Array.from(descriptionProjects).indexOf(event.target);
+    if (index !== -1 && images[index]) {
+      images[index].style.zIndex = "1";
+      images[index].style.transform = "scale(1)"; // Reset transform property
+      images[index].style.transition = "transform 0.6s";
+      console.log("Image z-index reset and scale reset");
+    }
+  }
 
+const descriptionProjects = 
+      document.querySelectorAll(".description_project");
 
-        
-        }
-    });
+descriptionProjects.forEach(descriptionProject=>{
+  descriptionProject.addEventListener("mouseenter", pushImageForward);
+  descriptionProject.addEventListener("mouseleave", resetImageZIndex);
 });
     </script>
-
-
-IMAGES EFFECT ON HOVER IN NAVIGATION 
-
-<script>
-document.querySelectorAll('.left > li').forEach(function(li, index) {
-    li.addEventListener('mouseover', function() {
-      document.querySelectorAll('.right > img').forEach(function(img, imgIndex) {
-        if (imgIndex === index) {
-          img.style.transform = 'scale(1.5)';
-          img.style.opacity = '1';
-        } else {
-          img.style.opacity = '0';
-        }
-      });
-    });
-  
-    li.addEventListener('mouseout', function() {
-      document.querySelectorAll('.right > img').forEach(function(img) {
-        img.style.transform = 'scale(1)';
-        img.style.opacity = '0';
-      });
-    });
-  });
-</script>  
-
-
-
-
-    COOL CURSOR
-
-<script>
-    var cursor = document.getElementById("cursor");
-    document.body.addEventListener("mousemove", function(e) {
-        cursor.style.left = e.clientX + "px";
-        cursor.style.top = e.clientY + "px";
-    });
-    
-    document.body.addEventListener("mouseover", function(e) {
-        cursor.style.border = '3px solid red'; // Change border to red
-    });
-    
-    
-    </script>-->
-
-
-
-    </html>
+        </html>
