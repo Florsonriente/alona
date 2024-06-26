@@ -263,6 +263,17 @@ grid-template-columns: 1fr 1fr;
     transform: translate(-50%, -50%);
   }
   
+  @media only screen and (max-width: 1500px) {
+
+ .description_images{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:1em;
+  margin:1em auto;
+ }
+}
  
   @media only screen and (max-width: 999px) {
     .aboutmaincontainer {
@@ -320,9 +331,16 @@ padding:0em;
     .page2,.page1 {
       height:auto;
     }
+    body > div > div.page2 > div.itaboutmaincontainer > div.video > video{
+      width:250px;
+    }
+    .images{
+      width:200px;
+    }
   }
 
   @media only screen and (max-width: 350px){
   body > div > div.page2 > div.itaboutmaincontainer > div.video > video{
     width:300px;
-  }}
+  }
+}
