@@ -121,6 +121,10 @@ width: 60%;
 line-height: 2em;
 }
 
+.swiper-slide img {
+
+  object-fit: contain;
+}
 .buttons{
   display: none!important;
 }

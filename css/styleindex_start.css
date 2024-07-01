@@ -43,8 +43,8 @@ body {
   background-color: white;
   z-index: 10000;
   /*border: 8px solid white;*/
-  height: 130px;
-  width: 130px;
+  height: 30px;
+  width: 30px;
   transition: all 200ms ease-out;
   /*background:white;
 
@@ -233,7 +233,8 @@ nav{
 #right-side {
   /*background-color: var(--right-color);
   background-color: black;*/
-  background-image: url(../pics/oldmanlaufeyson_clouds_of_data_fine_art_photography_fashion_mag_d06afed8-0d04-4b12-af34-40ca5b291693.png);
+  /*background-image: url(../pics/oldmanlaufeyson_clouds_of_data_fine_art_photography_fashion_mag_d06afed8-0d04-4b12-af34-40ca5b291693.png);*/
+  background-image: url(../pics/cloud_pink.png);
   background-size: cover;
 }
 
@@ -244,7 +245,7 @@ nav{
 #right-side .cool,
 #last-name {
   /*color: var(--dark);*/
-  color: white;
+  color: yellow;
 }
 
 #first-name {
