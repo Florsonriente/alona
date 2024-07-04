@@ -108,7 +108,7 @@ width:100%;
 display:flex;
 align-items: center;
 justify-content: space-between;
-margin-top:10%;
+
 
 }
 
@@ -175,7 +175,7 @@ width:100%;
   align-items: center;
   padding:0 20px;
   margin-top:50px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .col {
@@ -275,7 +275,16 @@ animation: walk 1.2s infinite steps(7);
 
     .search button img {
       width: 20px;
-    }}
+    }
+  
+    .card {
+      width: 250px;
+  }
+
+  .weather-icon {
+    width: 100px;}
+  
+  }
 
 
     @media only screen and (max-width: 330px) {

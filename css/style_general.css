@@ -223,4 +223,12 @@ nav{
  .right{
     display: none!important;
   }
+
+  .left{
+    height: auto;
+  }
+
+  .left a{
+    font-size: 1em;
+  }
 }
