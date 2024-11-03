@@ -114,12 +114,11 @@ background-image: url(../pics/be__the__art_large_color_blobs_covering_the_whole_
   flex-direction: row;
   align-items: flex-start;
   flex-wrap: wrap;
-  
- 
-  gap:2em;
+    gap:2em;
   background-color: #F03F35;
   border-radius: 15px;
   margin-bottom: 15em;
+  width:70%;
 }
 
 
