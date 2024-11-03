@@ -1,0 +1,15 @@
+
+
+.snow-container {
+  position: relative; /* Ensure that the snow effect can be positioned absolutely */
+  width: 100%; /* Full width */
+  height: 100vh; /* Full viewport height */
+}
+
+.snowfall {
+  position: absolute; /* Position the snowfall absolutely within the container */
+  top: 0; /* Start from the top */
+  left: 0; /* Start from the left */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+}

@@ -94,13 +94,15 @@ justify-content: space-evenly;
 }
 .header li, .portfolioheader li {
   transform: rotate(-90deg);
+  
+  
 }
 .header a, .portfolioheader a {
  
   display:block;
   color:#ffffff;
   cursor: pointer!important;
- 
+  font-size: 18px;
 }
 
 
@@ -217,8 +219,10 @@ nav{
   }
 
   button{
-    padding:0.5em;
-    font-size:0.7em;}
+    padding: 0.5em !important;
+    font: 0.7em !important;
+  
+  }
 
  .right{
     display: none!important;

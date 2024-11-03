@@ -15,12 +15,8 @@
 <meta name="theme-color" content="#ffffff">
 
  
-    <link rel="stylesheet" href="css/styleindex_start.css">
+    <link rel="stylesheet" href="css/style_start.css">
     <link rel="stylesheet" href="css/style_general.css">
-
-   
-    
-
 </head>
 
 
@@ -38,9 +34,9 @@
         height: 100vh;
         gap: 3em;">
 <li  > <a href="./index.html"> Start </a> </li>
-<li> <a href="./portfolio.html"> Portfolio </a> </li>
 <li > <a href="./about.html"> About  </a> </li>
-<li > <a href="./index_quiz.html"> Code for fun  </a> </li>
+<li > <a href="./skills.html"> Skills </a> </li>
+<!-- <li> <a href="./portfolio.html"> Portfolio </a> </li> -->
 <li > <a href="mailto:alonakalko89@gmail.com">Contact</a> </li>
         </div>
         <div style="display:none;"class ="right">
@@ -80,10 +76,6 @@
   </section>
 </main>
     </div>  
-
-
-
-
     </body>
 
 <!--OPEN CLOSE NAVIGATION -->
@@ -91,97 +83,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/cursor.js"></script>
-<!--<script>
-        
-        $(document).ready(function() {
-    $('.mobile-toggle').click(function() {
-        var isOpen = $(this).hasClass('open');
-
-        if (isOpen) {
-            $(this).removeClass('open');
-          $(this).find('span').text('☰'); //Change text to hamburger icon
-            $('header li, .portfolioheader li').css('transform', 'rotate(-90deg)');
-            $('ul').css('width', ''); // Remove width property
-            $('.right').css('display', 'none');
-            $('ul').css('flex-direction', 'column');
-            $('header a').css('font-size', '1em');
-            $('header a').css('font-weight', '300');
-            $('header a').css('text-transform', 'none');
-            $('nav').css('background-color', 'black');
-            if ($(window).width() < 800) {
-        // If screen width is less than 700px, set header link color to green
-        $('header a').css('color', 'transparent');
-    } else {
-        // Otherwise, set header link color to white
-        $('header a').css('color', 'white');
-    }
-            
-        } else {
-            $(this).addClass('open');
-            $(this).find('span').text('✕'); //Change text to close icon
-            $('header li, .portfolioheader li').css('transform', 'rotate(0deg)');
-            $('ul').css('width', '100vw');
-            $('.right').css('display', 'block');
-            $('.left').css('display', 'flex');
-            $('.left').css('width', '70%');
-            $('ul').css('flex-direction', 'row');
-            $('header a').css('font-size', '4em');
-            $('header a').css('font-weight', '900');
-            $('header a').css('text-transform', 'lowercase');
-            $('nav').css('background-color', 'black');
-            $('header a').css('color', 'white');
-
-
-
-        
-        }
-    });
-});
-    </script>-->
-
-
-<!--IMAGES EFFECT ON HOVER IN NAVIGATION 
-
-<script>
-document.querySelectorAll('.left > li').forEach(function(li, index) {
-    li.addEventListener('mouseover', function() {
-      document.querySelectorAll('.right > img').forEach(function(img, imgIndex) {
-        if (imgIndex === index) {
-          img.style.transform = 'scale(1.5)';
-          img.style.opacity = '1';
-        } else {
-          img.style.opacity = '0';
-        }
-      });
-    });
-  
-    li.addEventListener('mouseout', function() {
-      document.querySelectorAll('.right > img').forEach(function(img) {
-        img.style.transform = 'scale(1)';
-        img.style.opacity = '0';
-      });
-    });
-  });
-</script>  -->
-
-
-<!--
-    COOL CURSOR
-
-<script>
-var cursor = document.getElementById("cursor");
-document.body.addEventListener("mousemove", function(e) {
-    cursor.style.left = e.clientX + "px";
-    cursor.style.top = e.clientY + "px";
-});
-
-document.body.addEventListener("mouseover", function(e) {
-    cursor.style.border = '3px solid red'; // Change border to red
-});
-
-
-</script>-->
-
 
 
 <script>
@@ -194,56 +95,13 @@ const handleMovement = (event) => {
   const clientX = event.touches ? event.touches[0].clientX : event.clientX;
   const newWidthPercentage = (clientX / window.innerWidth) * 100;
   leftSideElement.style.width = `${newWidthPercentage}%`;
-  //mobileToggle.style.color = 'red';
-
-
 };
 
 // Attach movement handlers for both mouse and touch events
 document.addEventListener("mousemove", handleMovement);
 document.addEventListener("touchmove", (event) => handleMovement(event));
 
-// Function to animate text change on mousemove over the backend element
-/*const animateTextChange = (event) => {
-  const targetElement = event.target;
-  let iterations = 0;
-  const interval = setInterval(() => {
-    targetElement.innerText = targetElement.innerText
-      .split("")
-      .map((char, index) =>
-        index < iterations ? targetElement.dataset.value[index] : randomSign()
-      )
-      .join("");
-    if (iterations >= targetElement.dataset.value.length)
-      clearInterval(interval);
-    iterations++;
-  }, 30);
-};*/
 
-// Generate a random sign from the alphabet
-/*const randomSign = () =>
-  "ABCDEFGHIJKLMNOPQRSTUVWXYZ"[Math.floor(Math.random() * 26)];*/
-
-// Enhance text by wrapping each letter in a span with class 'letter'
-/*
-
-const enhanceTextWithSpans = (id) => {
-  const element = document.getElementById(id);
-  const letters = element.innerText.split("");
-  element.innerText = "";
-  letters.forEach((letter) => {
-    const span = document.createElement("span");
-    span.className = "letter";
-    span.innerText = letter;
-    element.appendChild(span);
-  });
-};
-
-// Initialize text enhancement and attach text animation handler
-document
-  .getElementById("backend");
- // .addEventListener("mousemove", animateTextChange);
- enhanceTextWithSpans("frontend");*/
 
 </script>
     </html>

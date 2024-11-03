@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="stylesheet" href="css/style_skills.css">
+    <link rel="stylesheet" href="css/style_general.css">
+</head>
+
+<header> 
+    <div class="header">
+        <div class="mobile-toggle">
+            <span class="icon">☰</span>
+        </div>
+        <nav>
+            <ul>
+                <div class="left" style="display: flex; flex-direction: column; align-items: center; justify-content: space-evenly; height: 100vh; gap: 3em;">
+                    <li><a href="./index.html"> Start </a></li>
+                    <li><a href="./about.html"> About </a></li>
+                    <li><a href="./skills.html"> Skills </a></li>
+                    <!-- <li><a href="./portfolio.html"> Portfolio </a></li> -->
+                    <li><a href="mailto:alonakalko89@gmail.com">Contact</a></li>
+                </div>
+                <div style="display:none;" class="right">
+                    <img src="./pics/1.PNG" alt="" style="width:300px; display:none!important">
+                    <img src="./pics/2.PNG" alt="" style="width:300px">
+                    <img src="./pics/3.PNG" alt="" style="width:300px">
+                    <img src="./pics/4.PNG" alt="" style="width:300px">
+                    <img src="./pics/5.PNG" alt="" style="width:300px">
+                </div>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="hero">  
+    <div class="page1">
+        <div class='cursor' id="cursor"></div>
+
+        <div class="accordion">
+            <!-- React and JS Accordion Section -->
+            <div class="accordion-item">
+                <button class="accordion-header">REACT, JSX, THREE JS</button>
+                <div class="accordion-content">
+                    <div class="project-grid">
+                        <div class="project"> 
+                            <h2>Create Advent Calendar</h2>
+                              <h2> Click on the image to see a demo video</h2>
+                           
+                            <img class="images video-thumbnail" src="./pics/react_christmas.PNG" alt="React Christmas" onclick="openLightbox('./videos/christmas_react.mp4')">
+                            <div class="description_project">
+                                <a href="https://github.com/Florsonriente/weihnachten_react">
+                                    <h2>  Visit project on github </h2>
+                             </a>
+                              
+                               
+                            </div>
+                        </div>
+                        <div class="project">
+                            <h2>3D Interactive Hero</h2>
+                            <h2>Click on the image to see a demo video</h2>
+                            <img class="images video-thumbnail" src="./pics/react_3d.PNG" alt="React 3D" onclick="openLightbox('./videos/threejs_react.mp4')">
+                            <div class="description_project">
+                                <a href="https://github.com/Florsonriente/three_js_react">
+                                    <h2>  Visit project on github </h2>
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WordPress Accordion Section -->
+            <div class="accordion-item">
+                <button class="accordion-header">WORDPRESS</button>
+                <div class="accordion-content">
+                    <div class="project-grid">
+                        <div class="project">
+                            <h2>Website for a creative agency: www.flayr.de</h2>
+                            <h2> Click on the image to see a demo video</h2>
+                           
+                            <img class="images video-thumbnail" src="./pics/flayr.PNG" alt="Flayr" onclick="openLightbox('./videos/flayr_02.mp4')">
+                            <div class="description_project">
+                                <a href="https://www.flayr.de">
+                                    <h2>  Visit actual project page </h2>
+                                </a>
+                                
+                            </div>
+                        </div>
+
+                        <div class="project">
+                            <h2>Website for air-analytics supplier: www.airsense.live</h2>
+                            <h2> Click on the image to see a demo video</h2>
+                            <img class="images video-thumbnail" src="./pics/airsense_3x2.png" alt="Air Sense" onclick="openLightbox('./videos/Air_Sense_Before_After.mp4')">
+                            <div class="description_project">
+                                <a href="https://www.airsense.live/">
+                                    <h2>The actual project page is unfortunately no longer live</h2>
+                                </a>
+                               
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- HTML, CSS, JS Accordion Section -->
+            <div class="accordion-item">
+                <button class="accordion-header">HTML, CSS, JS</button>
+                <div class="accordion-content">
+                    <div class="project-grid">
+                        <div class="project">
+                            <h2>Weather app with interactive background</h2>
+                            <h2> Click on the image to see a demo video</h2>
+                            <img class="images video-thumbnail" src="./pics/weather.PNG" alt="Weather App" onclick="openLightbox('./videos/weather_api.mp4')">
+                            <div class="description_project">
+                                <a href="https://florsonriente.github.io/alona/index_weather_app.html">
+                                    <h2>Visit actual project page</h2>
+                                </a>
+                              
+                            </div>
+                        </div>
+                        <div class="project">
+                            <h2>Movie generator</h2>
+                            <h2> Click on the image to see a demo video</h2>
+                            <img class="images video-thumbnail" src="./pics/movie.PNG" alt="Movie Generator" onclick="openLightbox('./videos/movie_api.mp4')">
+                            <div class="description_project">
+                                <a href="https://florsonriente.github.io/alona/movie_project_index.html">
+                                    <h2>Visit actual project page</h2>
+                                </a>
+                               
+                            </div>
+                        </div>
+
+                        <div class="project">
+                            <h2>Language game</h2>
+                            <h2> Click on the image to see a demo video</h2>
+                            <img class="images video-thumbnail" src="./pics/language game.PNG" alt="Language game" onclick="openLightbox('./videos/language_game.mp4')">
+                            <div class="description_project">
+                                <a href="https://florsonriente.github.io/alona/index_drag&drop.html">
+                                    <h2>Visit actual project page</h2>
+                                </a>
+                               
+                            </div>
+                        </div>
+                        <div class="project">
+                            <h2>CO2 Calculator/Worshipping the Minimalism</h2>
+                            <h2> Click on the image to see a demo video</h2>
+                            <img class="images video-thumbnail" src="./pics/sustainability.PNG" alt="CO2 Calculator" onclick="openLightbox('./videos/air_quality_api.mp4')">
+                            <div class="description_project">
+                                <a href="https://florsonriente.github.io/redi/">
+                                    <h2>Visit actual project page</h2>
+                                </a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">Watch skills demo</button>
+                <div class="accordion-content">
+                    <div class="project-grid">
+                      <div class="videowrapper">
+               
+                         <!-- Video Player -->
+                         <div class="video">
+                         <!--<h1>Have a look at my showreel!</h1> -->
+              <video controls poster="./pics/start.PNG" style="width: 100%; height: fit-content;">
+              <source src="./videos/showreel_420.mp4" type="video/mp4">
+              
+              Your browser does not support the video tag.
+              </video>
+              </div>
+              </div>
+                            </div>
+                        </div>
+        
+        
+                       
+                    </div>
+        
+        
+      
+        
+        
+        </div>
+
+        </div>
+    </div>
+
+ 
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content">
+            <video id="lightbox-video" controls width="300">
+                <source src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+</div> <!--page1-->
+</div><!--hero-->
+
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/cursor.js"></script>
+
+<script>
+document.querySelectorAll('.accordion-header').forEach(button => {
+    button.addEventListener('click', () => {
+        const accordionContent = button.nextElementSibling;
+
+        if (accordionContent.style.height) {
+            accordionContent.style.height = null; // Close accordion
+            accordionContent.style.opacity = 0;
+        } else {
+            // First, reset all other accordion items
+            document.querySelectorAll('.accordion-content').forEach(content => {
+                content.style.height = null;
+                content.style.opacity = 0;
+            });
+
+            // Temporarily set height to the scrollHeight to measure content
+            accordionContent.style.height = accordionContent.scrollHeight + 'px';
+
+            // Wait a moment and set height to 'auto' for dynamic resizing
+            setTimeout(() => {
+                accordionContent.style.height = 'auto';
+            }, 300); // Adjust timeout duration based on transition speed
+
+            accordionContent.style.opacity = 1;
+        }
+    });
+});
+
+
+function openLightbox(videoSrc) {
+    const lightboxVideo = document.getElementById('lightbox-video');
+    lightboxVideo.src = videoSrc; 
+    document.getElementById('lightbox').style.display = 'flex';
+}
+
+function closeLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+    const lightboxVideo = document.getElementById('lightbox-video');
+    lightboxVideo.src = '';
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Film Finder</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="./js/main.js"></script>
+    <link rel="stylesheet" href="./css/style_movies.css">
+    <link rel="stylesheet" href="./css/style_general.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400&family=Fredoka+One&family=Questrial&family=Staatliches&display=swap" rel="stylesheet">
+
+    
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script defer src="./js/movie_finder_helpers.js"></script>
+    <script defer src="./js/movie_finder.js"></script>
+ 
+    <!--<link rel="stylesheet" href="css/styleindex_weather_app.css">-->
+
+  
+  
+
+  </head>
+  <header > 
+    <div class = "header">
+        <div class="mobile-toggle">
+            <span class="icon">☰</span>
+          </div>
+  <nav>
+    <ul>
+      <div class="left" style="    display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 100vh;
+      gap: 3em;">
+<li  > <a href="./index.html"> Start </a> </li>
+<li > <a href="./about.html"> About  </a> </li>
+<li > <a href="./skills.html"> Skills </a> </li>
+<!-- <li> <a href="./portfolio.html"> Portfolio </a> </li> -->
+<li > <a href="mailto:alonakalko89@gmail.com">Contact</a> </li>
+      </div>
+      <div style="display:none;"class ="right">
+        <img src="./pics/1.PNG" alt="" style="width:300px"style="display:none!important">
+        <img src="./pics/2.PNG" alt="" style="width:300px">
+        <img src="./pics/3.PNG" alt="" style="width:300px">
+        <img src="./pics/4.PNG" alt="" style="width:300px">
+        <img src="./pics/5.PNG" alt="" style="width:300px">
+      </div>
+      </ul>
+  
+  </nav>
+  </div>
+  </header>
+
+
+    <div class="start"> <h1 id="appTitle"><!--🍿-->Let's choose a cool movie for u! <br>Click like or deslike for more options!<!--🍿--></h1></h1></div>
+    <div class = "maincontainer">
+   
+    <form  id="genreForm">
+    <!--<label>Choose a genre:</label>-->  
+      <select name="genres" id="genres">
+      </select>
+    </form>
+    <button class = "button" id="playBtn">Let's Play!</button>
+    <div id="movieInfo">
+      <div id="moviePoster">
+
+      </div>
+      <div id="movieText"></div>
+
+
+    </div>
+
+    <div id="likeOrDislikeBtns" hidden>
+      <button id="likeBtn"><i class="fa-solid fa-thumbs-up"></i></button>
+      <button id="dislikeBtn"><i class="fa-solid fa-thumbs-down"></i></button>
+    </div>
+      
+    </div>
+
+
+
+      </main>
+  
+  </body>
+</html>

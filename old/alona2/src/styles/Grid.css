@@ -1,0 +1,52 @@
+
+/* Full page grid layout - 6 columns and 2 rows */
+.background-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensures that it's behind the content */
+  }
+  
+  /* Individual grid items */
+  .grid-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+  }
+  
+  .grid-item:hover {
+    z-index: 2; /* Bring hovered grid item above others */
+  }
+  
+  .grid-item:hover .image-hover img {
+    transform: scale(1.5); /* Expand the image on hover */
+    opacity: 1;
+  }
+  
+  /* Image inside grid */
+  .image-hover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 1; /* Start hidden */
+  }
+  
+  .grid-item:hover .image-hover img {
+    opacity: 1; /* Show the image on hover */
+  }
+
+
+  /* nav {
+    rotate: -90deg;
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  } */

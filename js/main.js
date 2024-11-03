@@ -17,7 +17,7 @@ $(document).ready(function() {
             $('header a').css('font-size', '1em');
             $('header a').css('font-weight', '300');
             $('header a').css('text-transform', 'none');
-            $('nav').css('background-color', 'black');
+            $('nav').css('background-color', '#F03F35');
             if ($(window).width() < 800) {
         // If screen width is less than 700px, set header link color to green
         $('header a').css('color', 'transparent');
@@ -40,9 +40,9 @@ $(document).ready(function() {
             $('.left').css('width', '70%');
             $('ul').css('flex-direction', 'row');
             $('header a').css('font-size', '4em');
-            $('header a').css('font-weight', '900');
+            $('header a').css('font-weight', '300');
             $('header a').css('text-transform', 'lowercase');
-            $('nav').css('background-color', 'black');
+            $('nav').css('background-color', '#F03F35');
             $('header a').css('color', 'white');
 
 
