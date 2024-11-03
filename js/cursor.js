@@ -8,6 +8,8 @@
       cursor.style.border = '0px solid red'; // Change border to red
       cursor.style.background = 'white'; // 
       cursor.style.transition = '0.15s';
+
+
   });
   
   /*
