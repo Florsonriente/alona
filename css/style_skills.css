@@ -132,7 +132,7 @@ background-color: #000000;
   height: 0;
   opacity: 0;
   overflow: hidden;
-  transition: height 0.3s ease, opacity 0.3s ease;
+  transition: height 0.8s ease, opacity 0.3s ease;
 }
 
 .project-grid {
