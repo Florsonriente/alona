@@ -33,7 +33,7 @@ background-image: url(../pics/be__the__art_large_color_blobs_covering_the_whole_
   top: 0;
   left: 0;
   width: 100%;
- min-height: 200vh;
+ min-height: 300vh;
   background-image: url('../pics/be__the__art_large_color_blobs_covering_the_whole_screen_flat.png'); 
   background-size: cover;
   background-position: center;
@@ -46,7 +46,7 @@ background-image: url(../pics/be__the__art_large_color_blobs_covering_the_whole_
   left: 0;
   width: 100%;
   min-height: 200vh;
-  background-color: #B7E3E4;
+  /* background-color: #B7E3E4; */
   z-index: 2;
  
 }
@@ -64,7 +64,7 @@ background-image: url(../pics/be__the__art_large_color_blobs_covering_the_whole_
   z-index: 10000;
 }*/
 
-/* Define the custom cursor 
+/**/ 
 .cursor {
   position: fixed;
   border-radius: 18% 74% 35% 65% / 47% 58% 42% 34%; 
@@ -81,7 +81,7 @@ background-image: url(../pics/be__the__art_large_color_blobs_covering_the_whole_
 
   
   animation: floatingBorderRadius 8s infinite ease-in-out;
-}*/
+}
 
 /* Define the animation */
 @keyframes floatingBorderRadius {
