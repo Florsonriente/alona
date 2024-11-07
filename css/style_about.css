@@ -16,7 +16,7 @@
 body {
 
 
-background-image: url(../pics/be__the__art_large_color_blobs_covering_the_whole_screen_flat.png);
+background-image: url(../pics/be__the__art_large_color_blobs_covering_the_whole_screen_flat_upscaled.png);
 /*bbackground-image: url(../pics/cloud_pink.png);*/
 
 }
@@ -33,7 +33,7 @@ background-image: url(../pics/be__the__art_large_color_blobs_covering_the_whole_
   top: 0;
   left: 0;
   width: 100%;
- min-height: 300vh;
+
   background-image: url('../pics/be__the__art_large_color_blobs_covering_the_whole_screen_flat.png'); 
   background-size: cover;
   background-position: center;
