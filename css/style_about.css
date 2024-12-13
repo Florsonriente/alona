@@ -24,7 +24,7 @@ background-image: url(../pics/be__the__art_large_color_blobs_covering_the_whole_
 .hover-effect {
   position: relative;
   width: 100%;
-  min-height: 200vh;
+  min-height: 100vh;
  
 }
 
@@ -45,7 +45,7 @@ background-image: url(../pics/be__the__art_large_color_blobs_covering_the_whole_
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 200vh;
+  min-height: 100vh;
   /* background-color: #B7E3E4; */
   z-index: 2;
  
@@ -72,7 +72,7 @@ background-image: url(../pics/be__the__art_large_color_blobs_covering_the_whole_
   pointer-events: none;
   left: -100px;
   top: 50%;
-  mix-blend-mode: hue;
+  /**/ mix-blend-mode: hue; 
   background-image: url('../pics/be__the__art_large_color_blobs_covering_the_whole_screen_flat.png'); 
   z-index: 10000;
   height: 500px;
@@ -81,6 +81,9 @@ background-image: url(../pics/be__the__art_large_color_blobs_covering_the_whole_
 
   
   animation: floatingBorderRadius 8s infinite ease-in-out;
+}
+body {
+  cursor: none; 
 }
 
 /* Define the animation */
@@ -147,7 +150,7 @@ background-image: url(../pics/be__the__art_large_color_blobs_covering_the_whole_
   background-color: #F03F35;
     border-radius: 15px;
     margin-bottom: 2em;
-    width:70%;
+    /* width:70%; */
 
     
 }
@@ -167,7 +170,7 @@ background-image: url(../pics/be__the__art_large_color_blobs_covering_the_whole_
   background-color: #F03F35;
   border-radius: 15px;
   margin-bottom: 15em;
-  width:70%;
+  /* width:70%; */
   margin: auto;
 }
 
@@ -277,8 +280,9 @@ grid-template-columns: 1fr 1fr;
 
   .buttons_about{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+  
+    gap: 0.5em;
     
   }
   
