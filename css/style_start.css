@@ -20,21 +20,18 @@ body {
 background-size: cover;
 background-repeat: repeat;
 background-position: center center;
-height:100%;
-background-color: black;
+
 
 
 }
 
-/*COOL CURSOR*/
+/*COOL CURSOR
 body {
   cursor: none; 
-}
+}*/
 
-/* Define the custom cursor */
-.cursor {
-  position: fixed;
-  border-radius: 18% 74% 35% 65% / 47% 58% 42% 34%; /* Starting point */
+/* Define the custom cursor
+
   transform: translateX(-50%) translateY(-50%);
   pointer-events: none;
   left: -100px;
@@ -46,8 +43,31 @@ body {
   width: 500px;
   transition: all 200ms ease-out;
 
-  /* Animation for border-radius and rotation */
   animation: floatingBorderRadius 8s infinite ease-in-out;
+} */
+.cursor {
+  position: fixed;
+ border-radius: 50%;
+  /**/ transform: translateX(-50%) translateY(-50%);
+  pointer-events: none;
+  left: -100px;
+  top: 50%;
+  
+  background-color: #F03F35;
+  z-index: 10000;
+  /*border: 8px solid white;*/
+  height: 30px;
+  width: 30px;
+  transition: all 200ms ease-out;
+  /*background:white;
+
+  background: #f27121;
+background: -webkit-radial-gradient(circle, #f27121 0%, #e94057 50%, #8a2387 100%);
+background: radial-gradient(circle, #f27121 0%, #e94057 50%, #8a2387 100%);
+
+background: radial-gradient(circle, transparent 20%, #000000 20%, #000000 80%, transparent 80%, transparent) 0% 0% / 200px 200px, radial-gradient(circle, transparent 20%, #000000 20%, #000000 80%, transparent 80%, transparent) 100px 100px / 200px 200px, linear-gradient(#fffd47 8px, transparent 8px) 0px -4px / 100px 100px, linear-gradient(90deg, #fffd47 8px, #000000 8px) -4px 0px / 100px 100px #000000;
+*/background-size: 200px 200px, 200px 200px, 100px 100px, 100px 100px;
+
 }
 
 /* Define the animation */
@@ -245,7 +265,8 @@ nav{
 
 /* Side Specific Styles */
 #left-side {
-  background-color: #B7E3E4;
+  /* background-color: #B7E3E4; */
+  background-color: #b7b7e4;
   width: 90%;
   z-index: 2;
   transition: 0.85s;
@@ -260,8 +281,10 @@ nav{
   /*background-color: var(--right-color);
   background-color: black;*/
   /*background-image: url(../pics/oldmanlaufeyson_clouds_of_data_fine_art_photography_fashion_mag_d06afed8-0d04-4b12-af34-40ca5b291693.png);*/
-  background-image: url(../pics/be__the__art_large_color_blobs_covering_the_whole_screen_flat.png);
+  /* background-image: url(../pics/be__the__art_large_color_blobs_covering_the_whole_screen_flat.png); */
   background-size: cover;
+  background-image: url(../pics/merhene_3D_rendering_with_a_minimalist_and_modern_style._It_fea_7e9072a5-8018-4d5d-86f0-9a0e46ac7ef8.png);
+  background-position: center center;
 }
 
 #right-side .title {
@@ -271,7 +294,7 @@ nav{
 #right-side .cool,
 #last-name {
   /*color: var(--dark);*/
-  color: rgb(255, 255, 255);
+  color:#F03F35;
 }
 
 #first-name {

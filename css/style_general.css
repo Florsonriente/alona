@@ -110,7 +110,7 @@ justify-content: space-evenly;
 .header a:hover, .portfolioheader a:hover {
  
   display:block;
-  color:#ebff00;
+  color:#F03F35;
   font-weight: 600;
  
 }
@@ -155,7 +155,7 @@ cursor: pointer !important;
 button{
 padding:1.5em;
 
-background-color: /*#555#ebff00;*/white;
+background-color: #F03F35;
 font-weight: 300;
 font-size:1.3em;
 font-weight: 600;
@@ -178,7 +178,7 @@ transition: all 200ms ease-in;
 
 button a{
 /*color:#ffffff;*/
-color: #000000;
+color: white;
 -webkit-transition: all 400ms ease-in;
 -moz-transition: all 400ms ease-in;
 transition: all 400ms ease-in;
@@ -186,12 +186,12 @@ transition: all 400ms ease-in;
   -o-transition: all 400ms ease-in;
 }
 
-/*button:hover a{
-  color: #000000;
+button:hover a{
+  color: #F03F35;
   }
   button:hover {
-    background-color: #ffffff;
-    }*/
+    background-color: #b7b7e4;
+    }
 
     /*hedaer hover animation*/
 

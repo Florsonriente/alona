@@ -16,8 +16,10 @@
 body {
 
 
-background-image: url(../pics/be__the__art_large_color_blobs_covering_the_whole_screen_flat_upscaled.png);
+background-image: url(../pics/merhene_3D_rendering_with_a_minimalist_and_modern_style._It_fea_7e9072a5-8018-4d5d-86f0-9a0e46ac7ef8.png);
 /*bbackground-image: url(../pics/cloud_pink.png);*/
+background-position: center center;
+background-size: cover;
 
 }
 
@@ -28,17 +30,7 @@ background-image: url(../pics/be__the__art_large_color_blobs_covering_the_whole_
  
 }
 
-.bg-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
 
-  background-image: url('../pics/be__the__art_large_color_blobs_covering_the_whole_screen_flat.png'); 
-  background-size: cover;
-  background-position: center;
-  z-index: 1;
-}
 
 .color-overlay {
   position: absolute;
@@ -64,26 +56,31 @@ background-image: url(../pics/be__the__art_large_color_blobs_covering_the_whole_
   z-index: 10000;
 }*/
 
-/**/ 
+
+/* Define the custom cursor */
 .cursor {
   position: fixed;
-  border-radius: 18% 74% 35% 65% / 47% 58% 42% 34%; 
-  transform: translateX(-50%) translateY(-50%);
+ border-radius: 50%;
+  /**/ transform: translateX(-50%) translateY(-50%);
   pointer-events: none;
   left: -100px;
   top: 50%;
-  /**/ mix-blend-mode: hue; 
-  background-image: url('../pics/be__the__art_large_color_blobs_covering_the_whole_screen_flat.png'); 
-  z-index: 10000;
-  height: 500px;
-  width: 500px;
-  transition: all 200ms ease-out;
 
-  
-  animation: floatingBorderRadius 8s infinite ease-in-out;
-}
-body {
-  cursor: none; 
+  background-color: #F03F35;
+  z-index: 10000;
+  /*border: 8px solid white;*/
+  height: 30px;
+  width: 30px;
+  transition: all 200ms ease-out;
+  /*background:white;
+
+  background: #f27121;
+background: -webkit-radial-gradient(circle, #f27121 0%, #e94057 50%, #8a2387 100%);
+background: radial-gradient(circle, #f27121 0%, #e94057 50%, #8a2387 100%);
+
+background: radial-gradient(circle, transparent 20%, #000000 20%, #000000 80%, transparent 80%, transparent) 0% 0% / 200px 200px, radial-gradient(circle, transparent 20%, #000000 20%, #000000 80%, transparent 80%, transparent) 100px 100px / 200px 200px, linear-gradient(#fffd47 8px, transparent 8px) 0px -4px / 100px 100px, linear-gradient(90deg, #fffd47 8px, #000000 8px) -4px 0px / 100px 100px #000000;
+*/background-size: 200px 200px, 200px 200px, 100px 100px, 100px 100px;
+
 }
 
 /* Define the animation */
@@ -141,16 +138,16 @@ body {
 .aboutmaincontainer {
   display: flex;
   flex-wrap: no-wrap;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   gap:2em;
   padding: 1em 5em;
   margin: auto;
   align-items: center;
-  background-color: #F03F35;
+  /* background-color:#e4dcdc65; */
     border-radius: 15px;
     margin-bottom: 2em;
-    /* width:70%; */
+    
 
     
 }
@@ -167,7 +164,7 @@ body {
   align-items: flex-start;
   flex-wrap: wrap;
     gap:2em;
-  background-color: #F03F35;
+  background-color:#F03F35;
   border-radius: 15px;
   margin-bottom: 15em;
   /* width:70%; */
@@ -189,6 +186,7 @@ body {
   width:70%;
   margin: auto;
   padding: 1.5em ;
+  color:#F03F35;
  
 
 }
@@ -196,8 +194,13 @@ body {
   display:block;
   border-radius: 0px;
   width:300px;
-  filter: grayscale(1.4);
+  /* filter: grayscale(1.4); */
   border-radius: 15px;
+}
+
+.story{
+  background-color: #80809F;
+    border-radius: 15px;
 }
 
 .aboutmaincontainer h2{
@@ -274,16 +277,20 @@ grid-template-columns: 1fr 1fr;
 
 
 
-  .buttons{
-    display: none !important;;
+  .buttons_main{
+    display: flex;
+    justify-content: center;
+    padding:6.5em;
+   
   }
 
   .buttons_about{
     display: flex;
-    flex-direction: column;
-  
-    gap: 1em;
+    flex-direction: row;
     
+    gap: 1em;
+    margin-bottom: 4em;
+  
   }
   
 
