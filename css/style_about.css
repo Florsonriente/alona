@@ -193,7 +193,7 @@ background: radial-gradient(circle, transparent 20%, #000000 20%, #000000 80%, t
 .pic img {
   display:block;
   border-radius: 0px;
-  width:300px;
+  width:360px;
   /* filter: grayscale(1.4); */
   border-radius: 15px;
 }
