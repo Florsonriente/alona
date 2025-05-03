@@ -157,6 +157,9 @@ background: radial-gradient(circle, transparent 20%, #000000 20%, #000000 80%, t
   
 }
 
+h2{
+  color:white;
+}
 
 .itaboutmaincontainer{
   display: flex;
@@ -201,16 +204,17 @@ background: radial-gradient(circle, transparent 20%, #000000 20%, #000000 80%, t
 .story{
   background-color: #80809F;
     border-radius: 15px;
+    padding:1.5em;
 }
 
-.aboutmaincontainer h2{
+/* .aboutmaincontainer h2{
   text-align: left;
   font-size: 1em;
   font-weight: 300;
   color: #ffffff;
   padding: 2em;
  
-}
+} */
 
  .itaboutmaincontainer h2{
  text-align: left;
@@ -291,6 +295,10 @@ grid-template-columns: 1fr 1fr;
     gap: 1em;
     margin-bottom: 4em;
   
+  }
+
+  .button-link{
+    margin:1em;
   }
   
 
